@@ -1,0 +1,27 @@
+POST http://localhost:9999/videos
+Content-type: application/json
+
+{
+    "title": "video filme",
+    "description": "Primeiro Filme",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:9999/videos?search=node
+
+###
+
+PUT http://localhost:9999/videos/5bd26529-f1ed-400e-a3f8-c5985cb8f5ae
+Content-type: application/json
+
+{
+    "title": "video Atualizado",
+    "description": "Primeiro Filme Atualizado",
+    "duration": 180
+}
+
+###
+
+DELETE http://localhost:9999/videos/dc97f471-766a-4aca-a73c-ec65c7723f8f
